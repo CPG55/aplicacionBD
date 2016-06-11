@@ -32,14 +32,15 @@ public class Marco_Aplicacion extends JFrame {
 
 class LaminaBotonesMenu extends JPanel {
 
-    //Constructor de la zona de resultados con scroll.
+    //Constructor del panel derecho con botones.
     public LaminaBotonesMenu() {        
         
         //Tipo de Layout.
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         //Crear un borde para la lamina.Así queda más bonito (y veo como es el JPanel creado).
-        setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Menú de la Aplicación"));
-                
+        setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(),
+                                                   "Menú de la Aplicación"));
+              
         
         //Crear botones.
         JButton botonInsertar = new JButton ("Insertar Opositor.");
@@ -79,12 +80,14 @@ class LaminaBotonesMenu extends JPanel {
     }
 }
 
-class LaminaTexto extends JPanel {
 
+class LaminaTexto extends JPanel {
+    //Constructor del panel izquierdo, zona de resultados con scroll.
     public LaminaTexto() {
         
         //Crear un borde para la lamina.
-        setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Resultados de las consultas:"));
+        setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(),
+                                                   "Resultados de las consultas:"));
         
         //Zona de texto. Con tamaño fijo y scroll.
         JTextArea miAreaDeTexto = new JTextArea(30,50);

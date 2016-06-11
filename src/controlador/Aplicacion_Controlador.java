@@ -1,4 +1,4 @@
-package tarea11prog;
+package controlador;
 
 import java.util.Scanner;
 import javax.swing.JFrame;
@@ -10,13 +10,12 @@ import modelo.EjecutaConsulta;
  * Clase iniciadora de la aplicación.
  */
 
-public class Tarea11Prog_Controlador {
+public class Aplicacion_Controlador {
 
     public static void main(String[] args) {
         
         EjecutaConsulta basedatos = new EjecutaConsulta();
         Scanner intro = new Scanner(System.in);
-
         
         //Crear objeto JFrame
         JFrame miMarcoAplicacion = new Marco_Aplicacion();
@@ -57,7 +56,6 @@ public class Tarea11Prog_Controlador {
                     break;
                 case 5:
                     basedatos.consultaCentros();
-                   // miMarcoAplicacion.addI; setJ basedatos.consultaCentros();
                     break;
                 case 6:
                     System.out.println("Programa finalizado.");

@@ -142,7 +142,7 @@ public class EjecutaConsulta {
             //e.printStackTrace();
         }
     }
-    
+    /*
     public ResultSet consultarListaOpositores() {
         
         Conexion con = con.dameConexion();
@@ -171,5 +171,5 @@ public class EjecutaConsulta {
         }
         
         
-    }
+    }*/    
 }

@@ -2,7 +2,7 @@ package vista;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import tarea11prog.Tarea11Prog_Controlador;
+import controlador.Aplicacion_Controlador;
 
 /**
  * @author Carlos Pérez González. 1º DAM.
@@ -20,7 +20,7 @@ class Eventos_Botones implements ActionListener {
 
         //Diferenciación de acciones a desencadenar.
         if (botonPulsado == "botonInsertar") {
-             System.out.println("Estas pulsando un puto boton de insertar");
+             System.out.println("Estas pulsando un boton de insertar");
                         
         }
         
@@ -48,7 +48,7 @@ class Eventos_Botones implements ActionListener {
         
         if (botonPulsado == "botonSalir") {
             
-            System.out.println("Estas pulsando el puto boton salir");
+            System.out.println("Estas pulsando el boton salir");
             try {                
                 System.exit ( 0 );
             } catch (Exception ex) {
@@ -59,4 +59,3 @@ class Eventos_Botones implements ActionListener {
     }
 }
 
-//.append("HAS PULSADO UN PUTO BOTON");
